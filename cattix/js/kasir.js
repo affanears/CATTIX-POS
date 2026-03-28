@@ -171,6 +171,11 @@ async function loadStore() {
 
   document.getElementById('store-phone').innerText =
     data?.phone || "-"
+
+  // ✅ LOGO
+  if (data?.logo) {
+    document.getElementById('struk-logo').src = data.logo
+  }
 }
 
 // ================== BAYAR ==================
